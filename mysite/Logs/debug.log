@@ -1,0 +1,130 @@
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+Home Page Opened
+"GET / HTTP/1.1" 200 21672
+Not Found: /img/map-marker.png
+"GET /img/map-marker.png HTTP/1.1" 404 4508
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+Home Page Opened
+"GET / HTTP/1.1" 200 21672
+Not Found: /img/map-marker.png
+"GET /img/map-marker.png HTTP/1.1" 404 4508
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+Home Page Opened
+"GET / HTTP/1.1" 200 21672
+Home Page Opened
+"GET / HTTP/1.1" 500 59
+"GET / HTTP/1.1" 200 21672
+"GET /static/Home/css/bootstrap.min.css HTTP/1.1" 200 121200
+"GET /static/Home/css/loading.css HTTP/1.1" 200 1535
+"GET /static/Home/css/grayscale.css HTTP/1.1" 200 6760
+"GET /static/Home/js/bootstrap.min.js HTTP/1.1" 200 37045
+"GET /static/Home/js/grayscale.min.js HTTP/1.1" 200 2479
+"GET /static/Home/fonts/font-awesome.min.css HTTP/1.1" 200 29063
+"GET /static/Home/js/jquery.js HTTP/1.1" 200 293430
+"GET /static/Home/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1" 200 71896
+"GET /static/Home/img/Preloader_7.gif HTTP/1.1" 200 31106
+"GET /static/Home/img/Insight.jpeg HTTP/1.1" 200 109844
+"GET /static/Home/img/demo.jpg HTTP/1.1" 200 447573
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4487
+Not Found: /img/map-marker.png
+"GET /img/map-marker.png HTTP/1.1" 404 4508
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+Home Page Opened
+"GET / HTTP/1.1" 200 21681
+Text Data saved to Mongo DB
+Exception while resolving variable 'skills' in template 'home/Analyze_Character.html'.
+Traceback (most recent call last):
+  File "C:\Users\Harikrishnan\Envs\myproject\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [skills] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x00000000091E8978>>, 'user': <SimpleLazyObject: <function <lambda> at 0x00000000091E8898>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x000000000935C470>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x00000000091EE4E0>, u'request': <WSGIRequest: POST '/analyze/'>}, {}, {'Extraversion': {'Character': 'Agreeableness', 'Extraversion': 50.0, 'Neuroticism': 54.546314507099368, 'Agreeableness': 54.704095978911049, 'Conscientiousness': 50.0, 'Openness': 46.475707387308688}}, {'block': <Block Node: skills. Contents: [<TextNode: u'\\n'>, <For Node: for j in skills, tail_len: 9>, <TextNode: u'\\n'>]>}, {}]"
+"POST /analyze/ HTTP/1.1" 200 7442
+"GET /static/Personality/js/modernizr.custom.js HTTP/1.1" 404 1715
+"GET /static/Personality/fonts/font-awesome/css/font-awesome.css HTTP/1.1" 200 28747
+"GET /static/Personality/css/style.css HTTP/1.1" 200 15365
+"GET /static/Personality/css/prettyPhoto.css HTTP/1.1" 200 19757
+"GET /static/Personality/css/bootstrap.css HTTP/1.1" 200 148172
+"GET /static/Personality/js/jquery.1.11.1.js HTTP/1.1" 200 95785
+"GET /static/Personality/js/bootstrap.js HTTP/1.1" 200 67546
+"GET /static/Personality/js/SmoothScroll.js HTTP/1.1" 200 13795
+"GET /static/Personality/js/easypiechart.js HTTP/1.1" 200 8443
+"GET /static/Personality/js/jquery.prettyPhoto.js HTTP/1.1" 200 22060
+"GET /static/Personality/js/jquery.isotope.js HTTP/1.1" 200 44657
+"GET /static/Personality/js/jquery.counterup.js HTTP/1.1" 200 2658
+"GET /static/Personality/js/waypoints.js HTTP/1.1" 200 8044
+"GET /static/Personality/js/jqBootstrapValidation.js HTTP/1.1" 200 36171
+"GET /static/Personality/js/contact_me.js HTTP/1.1" 200 2844
+"GET /static/Personality/js/main.js HTTP/1.1" 200 2389
+"GET /static/Personality/img/intro-bg.jpg HTTP/1.1" 200 5971552
+"GET /static/Personality/img/favicon.ico HTTP/1.1" 404 1694

@@ -1,0 +1,7 @@
+{% extends "Pages/Frame.html" %}
+{% block content %}
+	<h2>This is you type content</h1>
+    {% for post in posts %}
+      {{ post }}
+  {% endfor %}
+{% endblock %}

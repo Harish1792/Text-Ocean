@@ -1,0 +1,72 @@
+{% extends "home/Analyze.html" %}
+{% block content %}	
+{% for key,values in Extraversion.items%}
+{% if key == 'Character'%}
+<h1 class = "Per_stle" style ="color:yellow">{{values}}</p> 
+{% endif %}
+{%endfor%}
+{% endblock %}
+
+
+{% block Extraversion %}
+{% for key,values in Extraversion.items %}
+	{% if key == 'Extraversion'%}
+      <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent={{values}}> <span class="percent">{{values}}</span> </span>
+        <h4 style ="color:Blue">Extraversion</h4>
+      </div>
+	{% elif key == 'Neuroticism'%}  
+		<div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent={{values}}> <span class="percent">{{values}}</span> </span>
+			<h4 style ="color:Blue">Neuroticism</h4>
+		</div>
+	{% elif key == 'Agreeableness'%}  
+		<div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent={{values}}> <span class="percent">{{values}}</span> </span>
+			<h4 style ="color:Blue">Agreeableness</h4>
+		</div>
+	{% elif key == 'Conscientiousness'%}  
+		<div class="col-md-7 col-sm-6 skill"> <span class="chart" data-percent={{values}}> <span class="percent">{{values}}</span> </span>
+			<h4 style ="color:Blue">Conscientiousness</h4>
+		</div>
+	{% elif key == 'Openness'%}  
+		<div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent={{values}}> <span class="percent">{{values}}</span> </span>
+			<h4 style ="color:Blue">Openness</h4>
+		</div>
+	{% endif %} 
+{% endfor %}
+{% endblock %}
+
+
+
+
+<!--
+{% block skills %}
+{% for j in skills %}
+
+<div id="skills" class="text-center">
+  <div class="container">
+    <div class="section-title center">
+      <h2>Personality Meter</h2>
+      <hr>
+    </div>
+    <div class="row">
+      <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent={{j}}> <span class="percent">{{j}}</span> </span>
+        <h4>Extraversion - {{loop.index}}</h4>
+      </div>
+      <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent={{j}}> <span class="percent">85</span> </span>
+        <h4>Neuroticism</h4>
+      </div>
+      <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="80"> <span class="percent">80</span> </span>
+        <h4>Agreeableness</h4>
+      </div>
+      <div class="col-md-7 col-sm-6 skill"> <span class="chart" data-percent="80"> <span class="percent">80</span> </span>
+        <h4>Conscientiousness</h4>
+      </div>
+      <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="70"> <span class="percent">70</span> </span>
+        <h4>Openness</h4>
+      </div>
+    </div>
+  </div>
+</div>
+{% endfor %}
+{% endblock %}
+
+-->
