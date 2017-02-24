@@ -60,7 +60,7 @@ def upload_file(request):
 
 ### Used to write the file into server folder	
 def handle_uploaded_file(f):
-    with open('C:\\Users\\Harikrishnan\\Django-Project\\mysite\\Text\\File\\Input\\Input.csv', 'wb+') as destination:
+    with open('/File/Input/Input.csv', 'wb+') as destination:
         for chunk in f.chunks():
             try:
                 l = chunk.splitlines()
@@ -77,7 +77,7 @@ def handle_uploaded_file(f):
 
 #/Download/
 def download_option(request):
-     filename     = "C:\\Users\\Harikrishnan\\Django-Project\\mysite\\Text\\File\\File_Prediction.csv" # Select your file here.
+     filename     = "/File/File_Prediction.csv" # Select your file here.
      download_name ="File_Prediction.csv"
      wrapper      = FileWrapper(open(filename))
      content_type = mimetypes.guess_type(filename)[0]

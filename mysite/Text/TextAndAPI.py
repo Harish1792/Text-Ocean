@@ -15,17 +15,21 @@ from sklearn.metrics import accuracy_score
 from sklearn.externals import joblib
 import numpy
 import operator
+import os 
+
 
 def predictTextData(param):
     print ("inside function")
     dataList = []
     #dataList.append(param)
-    ans = ProcessInput(param)
-    EXTmodel = joblib.load("C:\\Users\\Harikrishnan\\Documents\\Python\\work\\EXT_model.pkl")
-    CONmodel = joblib.load("C:\\Users\\Harikrishnan\\Documents\\Python\\work\\CON_model.pkl")
-    AGRmodel = joblib.load("C:\\Users\\Harikrishnan\\Documents\\Python\\work\\AGR_Model.pkl")
-    NEUmodel = joblib.load("C:\\Users\\Harikrishnan\\Documents\\Python\\work\\NEU_model.pkl")
-    OPNmodel = joblib.load("C:\\Users\\Harikrishnan\\Documents\\Python\\work\\OPN_model.pkl")
+    dir_path = os.path.dirname(os.path.realpath(__file__))
+    print dir_path
+    ans = ProcessInput(param,dir_path)
+    EXTmodel = joblib.load(dir_path + "/File/EXT_model.pkl")
+    CONmodel = joblib.load(dir_path + "/File/CON_model.pkl")
+    AGRmodel = joblib.load(dir_path + "/File/AGR_Model.pkl")
+    NEUmodel = joblib.load(dir_path + "/File/NEU_model.pkl")
+    OPNmodel = joblib.load(dir_path +"/File/OPN_model.pkl")
     ext = EXTmodel.predict_proba(ans)
     con = CONmodel.predict_proba(ans)
     agr = AGRmodel.predict_proba(ans)
@@ -44,9 +48,9 @@ def predictTextData(param):
     return result
 
 
-def ProcessInput(data):
+def ProcessInput(data,dir_path):
     print (data)
-    empath_def_categories = kungfu.read_csv("C:\\Users\\Harikrishnan\\Desktop\\Empath\\CategoryANDSeedTerms.csv")
+    empath_def_categories = kungfu.read_csv(dir_path + "/File/CategoryANDSeedTerms.csv")
     empath_Processed_list = empathdata_preprocessing(empath_def_categories)
     matchedListFrame = find_matching_words2(data,empath_Processed_list)
     return matchedListFrame
